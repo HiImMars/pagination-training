@@ -1,8 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-color: #222;
 }
 
 h1,
@@ -29,6 +31,78 @@ button {
   cursor: pointer;
 }
 
-.link {
+.container {
+  width: 75%;
+}
+
+.list-wrapper {
+  padding: 15px;
+  /* overflow: hidden; */
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.list-item {
+  border: 1px solid #eee;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px 0 #eee;
+  width: 30%;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.list-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.simple-pagination ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.simple-pagination li {
+  display: inline-block;
+  margin: 2px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+
   text-decoration: none;
+  color: #252525;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 1s ease;
+}
+
+.simple-pagination li a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.simple-pagination .current {
+  color: #fff;
+  background-color: #000;
+  border-color: rgb(255, 255, 255);
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+  background: #222;
+  border: none;
 }
