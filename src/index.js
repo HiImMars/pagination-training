@@ -15,3 +15,5 @@ $('#pagination-container').pagination({
     items.hide().slice(showFrom, showTo).show();
   },
 });
+
+// console.log('github ne lagay');
